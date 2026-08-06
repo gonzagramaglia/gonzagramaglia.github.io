@@ -1,0 +1,70 @@
+export const metadata = {
+  title: 'Runner-Up at HackTheKitty 2026: How I Competed Solo Against 127 Teams Using AI',
+  description: 'The AI system and tools that allowed me to secure second place out of 127 teams, being the only solo developer in the Top 7.',
+  alternates: {
+    canonical: '/blog/hackthekitty-2026',
+  },
+};
+
+import Link from 'next/link'
+import { YouTube } from '../../../components/youtube'
+
+# Runner-Up at HackTheKitty 2026: How I Competed Solo Against 127 Teams Using AI
+
+Securing **second place in a competition with 127 teams** is not something that happens every day. And the surprise is even bigger when you check the [official HackTheKitty leaderboard](https://hackthekitty.com/leaderboard) and notice a key detail: within the Top 7, **every other team consisted of multiple people... except me**.
+
+I was the only solo developer to reach the top, and in this post, I want to tell you exactly how I did it.
+
+![HackTheKitty Leaderboard](/blog/hackthekitty/leaderboard.jpeg)
+
+My submission for the competition was **[Fitty](https://github.com/gonzagramaglia/fitty)**, an AI-powered feline health tracker. Its main goal is to combat cat obesity by allowing owners to estimate their cat's Body Condition Score (BCS) right from home. With just two photos and voice notes from the owner, the application does all the heavy lifting.
+
+## From Solo Developer to AI Tech Lead
+
+Getting on the podium while competing against full teams was no accident. Building a complex full-stack architecture — with real-time databases and multiple AI model integrations in such a short time — would have been impossible for a single person just a few years ago. The real secret was leaning on a **development system heavily leveraged on Artificial Intelligence**.
+
+Instead of getting bogged down writing repetitive code, I acted as an orchestrator. The AIs handled the tactical implementation, while I focused on the strategy, connecting a modern and highly productive stack:
+
+*   **Claude 5 & OpenAI Whisper:** For deep image analysis and voice note transcription.
+*   **Temporal.io:** To ensure AI workflows executed in the background without failure.
+*   **Supabase:** Managing the real-time database and authentication.
+*   **React Native (Expo):** To quickly deploy the interface as a universal app.
+*   **Aikido Security:** To keep the code secure and audited from the very first commit.
+
+But technology alone wasn't enough. To move at the speed of a full team, I used three AI development tools that became non-negotiable: **Antigravity** (my default coding agent), **Kiro** (which I tried because they offered free hackathon credits — and ended up winning free months of subscription for using it!), and **[CodeRabbit](https://coderabbit.ai)**, which automatically reviewed every Pull Request and caught architecture violations, edge cases, and security issues I would have otherwise missed. Fun fact: CodeRabbit is also a sponsor of the [13th edition of Nerdearla](https://nerdearla.com/) — Argentina's biggest tech conference.
+
+[![Nerdearla — The Largest Free Tech Event in the Spanish-Speaking World](/blog/hackthekitty/nerdearla.png)](https://nerdearla.com/en/)
+
+*Speaking of communities and good vibes, a massive shoutout to the **Coding Kitty** community for organizing HackTheKitty. The energy in the Discord was incredible!*
+
+![Coding Kitty Community](/blog/hackthekitty/catmunity.png)
+
+To orchestrate these agents, I designed a system of custom **"Skills"**. These are specific commands that guided my "virtual team" through every stage of development:
+
+*   **`/architect`**: Forced the AI to think, design, and align the architecture before touching a single line of code.
+*   **`/imprint`**: Extracted the visual patterns of every new UI component to ensure consistency across the app.
+*   **`/review`**: A strict quality filter before every demo to verify that everything respected the architecture.
+*   **`/recover`**: My lifeline. A deep, structured diagnostic that prevented blind code fixes when something broke.
+*   **`/remember`**: The way to save (`save`) and restore (`restore`) critical project context across different sessions.
+
+## The Demo Nobody Saw Coming
+
+For the project presentation, I didn't want to fall behind. True to the development style, the demo video was generated almost entirely using AI. Since the hackathon's theme was *"World Cat Domination Day"*, I decided to take the premise to the extreme.
+
+I invented a character to present *Fitty*: a giant cat wearing a cap and sunglasses who looks suspiciously like **Bizarrap**. I trained a voice clone using **ElevenLabs**, feeding it with audio from Bizarrap and Shakira's appearance on *The Tonight Show Starring Jimmy Fallon* — so the result sounds exactly like him. In my story, this giant cat acts as a dictator who forces me to program the app to ensure the world's cats are in peak physical condition and ready for global domination. The video turned out packed with incredible clips of cats training, doing yoga, working, and eating healthy.
+
+![The Dictator "Biza-Cat"](/blog/hackthekitty/meow.jpg)
+
+This all fits perfectly with the core philosophy of my alter ego, [**Ciberportero**: *"Mens Secura in corpore tuto"*](https://x.com/ciberportero/status/2075184619637391742). True cyberdefense is about defending both the mind and the body... and it seems our future feline overlords know it too!
+
+## The Mindset That Changed Everything
+
+None of this happened by accident. Before the hackathon, I was already studying how experienced engineers approach AI-assisted development — and the single most important resource I found was this video by **JavaScript Mastery**:
+
+<div className="mt-8 mb-8">
+  <YouTube id="9dKA2hq4vf0" />
+</div>
+
+It completely reframed how I think about coding with AI. The key insight: stop treating AI as a code generator and start treating it as a teammate. That means giving it proper context, enforcing architectural constraints, and reviewing its output the same way you’d review a pull request from a junior developer. That’s exactly what the Skills system and all the context files in Fitty are built on.
+
+If you want to understand the full picture, watch that video first — it connects everything. Then, head over to the **[Fitty repository](https://github.com/gonzagramaglia/fitty)**. It’s completely open: the context files, the custom skills, the PR history reviewed by CodeRabbit, the architecture decisions made with `/architect`. There’s a lot to find.
