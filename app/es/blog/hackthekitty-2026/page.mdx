@@ -1,0 +1,70 @@
+export const metadata = {
+  title: 'Subcampeón en HackTheKitty 2026: Cómo competí solo contra 127 equipos usando IA',
+  description: 'El sistema y las herramientas de Inteligencia Artificial que me permitieron quedar en el segundo puesto de 127 equipos, siendo el único desarrollador solo en el Top 7.',
+  alternates: {
+    canonical: '/es/blog/hackthekitty-2026',
+  },
+};
+
+import Link from 'next/link'
+import { YouTube } from '../../../../components/youtube'
+
+# Subcampeón en HackTheKitty 2026: Cómo competí solo contra 127 equipos usando IA
+
+Lograr el **segundo puesto en una competencia con 127 equipos** no es algo que suceda todos los días. Y la sorpresa es aún mayor cuando revisas el [leaderboard oficial de HackTheKitty](https://hackthekitty.com/leaderboard) y notas un detalle clave: dentro del Top 7, **todos eran equipos formados por varias personas... excepto yo**.
+
+Fui el único desarrollador en solitario que logró llegar a la cima, y en este post quiero contarte exactamente cómo lo hice.
+
+![HackTheKitty Leaderboard](/blog/hackthekitty/leaderboard.jpeg)
+
+Mi propuesta para la competencia fue **[Fitty](https://github.com/gonzagramaglia/fitty)**, un rastreador de salud felina impulsado por IA. Su objetivo principal es combatir la obesidad en los gatos permitiendo estimar su Índice de Condición Corporal (BCS) directamente desde casa. Con solo dos fotos y notas de voz del dueño, la aplicación hace todo el trabajo pesado.
+
+## De desarrollador solitario a Tech Lead de IAs
+
+Quedar en el podio compitiendo contra equipos enteros no fue casualidad. Construir una arquitectura full-stack compleja — con bases de datos en tiempo real y múltiples integraciones de modelos de IA en tan poco tiempo — habría sido imposible para una sola persona hace unos años. El verdadero secreto fue apoyarme en un **sistema de desarrollo apalancado fuertemente en Inteligencia Artificial**.
+
+En lugar de atascarme escribiendo código repetitivo, actué como un orquestador. Las IAs se encargaban de la implementación táctica, mientras yo me enfocaba en la estrategia, conectando un stack moderno y ultra productivo:
+
+*   **Claude 5 & OpenAI Whisper:** Para el análisis profundo de imágenes y la transcripción de las notas de voz.
+*   **Temporal.io:** Para asegurar que los flujos de la IA se ejecutaran en segundo plano sin fallas.
+*   **Supabase:** Gestionando la base de datos en tiempo real y la autenticación.
+*   **React Native (Expo):** Para desplegar rápidamente la interfaz como una app universal.
+*   **Aikido Security:** Para mantener el código seguro y auditado desde el primer commit.
+
+Pero la tecnología por sí sola no bastaba. Para moverme a la velocidad de un equipo completo, utilicé tres herramientas de IA que se volvieron imprescindibles: **Antigravity** (mi agente de cabecera), **Kiro** (que probé porque ofrecían créditos gratis para la hackathon — ¡y como premio extra terminé ganando meses de suscripción gratis!), y **[CodeRabbit](https://coderabbit.ai)**, que revisaba automáticamente cada Pull Request y detectaba violaciones de arquitectura, casos borde y problemas de seguridad que yo solo había pasado por alto. Dato de color: CodeRabbit es también sponsor de la [13º edición de Nerdearla](https://nerdearla.com/) — la conferencia de tecnología más grande de Argentina.
+
+[![Nerdearla — El evento tecnológico gratuito más grande del mundo hispanohablante](/blog/hackthekitty/nerdearla.png)](https://nerdearla.com/en/)
+
+*Hablando de comunidades y buena vibra, un enorme shoutout (agradecimiento) a la comunidad de **Coding Kitty** por organizar el HackTheKitty. ¡La energía en el Discord fue increíble!*
+
+![Comunidad Coding Kitty](/blog/hackthekitty/catmunity.png)
+
+Para organizar el trabajo de estos agentes, diseñé un sistema de **"Skills" (Habilidades)** personalizadas. Básicamente, comandos específicos que guiaban a mi "equipo virtual" a través de cada etapa del desarrollo:
+
+*   **`/architect`**: Obligaba a la IA a pensar, diseñar y alinear la arquitectura antes de tocar una sola línea de código.
+*   **`/imprint`**: Extraía los patrones visuales de cada nuevo componente UI para asegurar consistencia en toda la app.
+*   **`/review`**: Un filtro de calidad estricto antes de cada demo para verificar que todo respetara la arquitectura.
+*   **`/recover`**: Mi salvavidas. Un diagnóstico profundo y estructurado que evitaba las correcciones de código a ciegas cuando algo se rompía.
+*   **`/remember`**: La forma de guardar (`save`) y restaurar (`restore`) el contexto crítico del proyecto entre diferentes sesiones.
+
+## El Demo Que Nadie Esperaba
+
+Para la presentación del proyecto no quise quedarme atrás. Fiel al estilo del desarrollo, el video demo fue generado casi en su totalidad usando IA. Como la temática de la hackathon era *"World Cat Domination Day"*, decidí llevar la premisa al extremo.
+
+Inventé un personaje para presentar *Fitty*: un gato gigante con gorra y gafas que se parece sospechosamente a **Bizarrap**. Entrené un clon de voz con **ElevenLabs**, alimentándolo con audio de la presentación de Bizarrap y Shakira en *The Tonight Show Starring Jimmy Fallon* — el resultado suena exactamente igual que él. En mi historia, este gato gigante actúa como un dictador que me obliga a programar la app para asegurar que los gatos del mundo estén en óptimas condiciones físicas y listos para la dominación global. El video quedó lleno de clips increíbles de gatos entrenando, haciendo yoga, trabajando y comiendo sano.
+
+![El "Biza-Gato" Dictador](/blog/hackthekitty/meow.jpg)
+
+Todo esto encaja a la perfección con la filosofía central de mi alter ego, [**Ciberportero**: *"Mens Secura in corpore tuto"*](https://x.com/ciberportero/status/2075184619637391742). La verdadera ciberdefensa consiste en proteger tanto la mente como el cuerpo... ¡y parece que nuestros futuros amos felinos también lo saben!
+
+## La Mentalidad Que Lo Cambió Todo
+
+Nada de esto pasó por casualidad. Antes de la hackathon, ya estaba estudiando cómo los ingenieros con experiencia abordan el desarrollo asistido por IA — y el recurso más importante que encontré fue este video de **JavaScript Mastery**:
+
+<div className="mt-8 mb-8">
+  <YouTube id="9dKA2hq4vf0" />
+</div>
+
+Cambió por completo la forma en que pienso al codear con IA. La clave: dejar de tratar a la IA como un generador de código y empezar a tratarla como un compañero de equipo. Eso implica darle contexto real, imponerle restricciones arquitectónicas, y revisar su output igual que revisarías un pull request de un desarrollador junior. Exactamente en eso está construido el sistema de Skills y todos los archivos de contexto de Fitty.
+
+Si querés entender el panorama completo, mirá primero ese video — conecta todo. Después, entrá al **[repositorio de Fitty](https://github.com/gonzagramaglia/fitty)**. Está completamente abierto: los archivos de contexto, las skills personalizadas, el historial de PRs revisados por CodeRabbit, las decisiones de arquitectura tomadas con `/architect`. Hay mucho para encontrar.

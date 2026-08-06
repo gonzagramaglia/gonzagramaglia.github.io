@@ -1,0 +1,360 @@
+export const metadata = {
+  title: 'Hacking Through the Holidays: My Advent of Cyber 2025 Experience',
+  description:
+    'This year I am participating in TryHackMe\'s Advent of Cyber 2025. Here I will document my daily progress, learning about offensive and defensive security, from Linux to AI in cybersecurity.',
+  alternates: {
+    canonical: '/blog/advent-of-cyber-2025',
+  },
+};
+
+import Link from 'next/link'
+import { TryHackMeBadge } from '../../../components/tryhackme-badge'
+import { AdventNav, DaySection } from './advent-components'
+
+# Hacking Through the Holidays: My Advent of Cyber 2025 Experience
+
+<Cover
+  src="/blog/advent-of-cyber/certificate.png"
+  alt="Advent of Cyber 2025 Certificate"
+  caption="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-W1KV6VKCGO.pdf"
+/>
+Cybersecurity never sleeps, but it does get festive. In December 2025, I joined TryHackMe's **Advent of Cyber**, taking on 24 days of back-to-back security challenges. It was the perfect excuse to sharpen my offensive and defensive skills, dive into new concepts, and hack my way through the holidays.
+
+<TryHackMeBadge />
+
+Below is my day-by-day log, documenting the solutions and key takeaways from each challenge.
+
+<AdventNav />
+
+## 0) Advent of Cyber Prep Track
+
+Before the main event started, I completed the "Prep Track". It was a series of warm-up tasks designed to get beginners ready (and refresh the memory of veterans) for what's coming. It covered essential basic concepts to ensure everyone is ready for the daily challenges.
+
+---
+
+![Advent of Cyber 2025](/blog/advent-of-cyber/day-0.png)
+
+---
+
+<DaySection day={1}>
+
+## 1) Linux CLI - Shells Bells
+
+**Topic:** Introduction to the Linux Command Line.
+
+Day 1 started with the basics but fundamental: the Linux terminal. "Shells Bells" took us to explore the command-line interface (CLI), learning how to navigate the file system, manipulate files, and use essential commands. It was an excellent reminder of why Linux is the operating system par excellence in cybersecurity.
+
+![Day 1 Screenshot](/blog/advent-of-cyber/day-1.png)
+*(Day 1 Challenge: Shells Bells)*
+
+</DaySection>
+
+<DaySection day={2}>
+
+## 2) Phishing - Merry Clickmas
+
+**Topic:** Social Engineering and Phishing.
+
+Day 2 got interesting with "Merry Clickmas". We learned how to use the **Social-Engineer Toolkit (SET)** to simulate phishing attacks. The challenge demonstrated how easy it can be to trick users into handing over their credentials and the importance of always being alert to suspicious emails.
+
+![Day 2 Screenshot](/blog/advent-of-cyber/day-2.png)
+*(Day 2 Challenge: Merry Clickmas)*
+
+</DaySection>
+
+<DaySection day={3}>
+
+## 3) Splunk Basics - Did you SIEM?
+
+**Topic:** Log Monitoring and Analysis with Splunk.
+
+On day 3, we delved into the world of defense (Blue Team) with "Did you SIEM?". We learned to ingest and parse custom logs using **Splunk**, one of the most popular SIEM (Security Information and Event Management) tools. It was great to see how suspicious activities can be detected by analyzing large volumes of data.
+
+![Day 3 Screenshot](/blog/advent-of-cyber/day-3.png)
+*(Day 3 Challenge: Did you SIEM?)*
+
+</DaySection>
+
+<DaySection day={4}>
+
+## 4) AI in Security - old sAInt nick
+
+**Topic:** Artificial Intelligence in Cybersecurity.
+
+Day 4, "old sAInt nick", showed us the power of AI. We explored how artificial intelligence can be used both to attack and defend systems. It is fascinating (and a bit scary) to see how these technologies are reshaping the security landscape.
+
+![Day 4 Screenshot](/blog/advent-of-cyber/day-4.png)
+*(Day 4 Challenge: old sAInt nick)*
+
+</DaySection>
+
+<DaySection day={5}>
+
+## 5) Web Security - It’s Dangerously Obvious, Really
+
+**Topic:** Insecure Direct Object References (IDOR).
+
+Day 5 focused on a critical web vulnerability: **IDOR**. We explored how attackers can access unauthorized data simply by manipulating parameters like `user_id` or `packageID` in a URL. The challenge demonstrated that even if references are encoded (e.g., Base64) or hashed, they can often be bypassed if the server lacks proper authorization checks. It was a great lesson on the difference between authentication ("who you are") and authorization ("what you are allowed to do").
+
+![Day 5 Screenshot](/blog/advent-of-cyber/day-5.png)
+*(Day 5 Challenge: It’s Dangerously Obvious, Really)*
+
+</DaySection>
+
+<DaySection day={6}>
+
+## 6) Malware Analysis - Principles of Malware Analysis
+
+**Topic:** Static and Dynamic Malware Analysis.
+
+Day 6 introduced the fascinating world of **Malware Analysis**. We learned to distinguish between **Static Analysis** (examining the file without running it) using tools like **PeStudio** to check strings and hashes, and **Dynamic Analysis** (executing the malware in a safe sandbox) using **Regshot** and **ProcMon** to observe its behavior, such as registry changes and system interactions. We practiced these techniques on a sample named `HopHelper.exe` to understand its malicious actions.
+
+![Day 6 Screenshot](/blog/advent-of-cyber/day-6.png)
+*(Here goes a screenshot of the Day 6 challenge)*
+
+</DaySection>
+
+<DaySection day={7}>
+
+## 7) Network Discovery - Scan-ta Clause
+
+**Topic:** Network Scanning and Enumeration.
+
+Day 7 took us back to the basics of reconnaissance. We used **Nmap** to scan a network, identify active hosts, open ports, and running services. It was a practical exercise in understanding how attackers map out a target infrastructure and why visibility is crucial for defenders.
+
+![Day 7 Screenshot](/blog/advent-of-cyber/day-7.png)
+*(Day 7 Challenge: Scan-ta Clause)*
+
+</DaySection>
+
+<DaySection day={8}>
+
+## 8) Prompt Injection - Sched-yule Conflict
+
+**Topic:** Exploiting AI and LLMs.
+
+On Day 8, we explored a modern vulnerability: **Prompt Injection**. We interacted with an AI agent and learned how to craft specific inputs to bypass its safety filters and make it reveal sensitive information or perform unauthorized actions. It highlighted the new attack surface introduced by integrating LLMs into applications.
+
+![Day 8 Screenshot](/blog/advent-of-cyber/day-8.png)
+*(Day 8 Challenge: Sched-yule Conflict)*
+
+</DaySection>
+
+<DaySection day={9}>
+
+## 9) Passwords - A Cracking Christmas
+
+**Topic:** Password Cracking and Encryption.
+
+Day 9 was all about breaking into encrypted files. We analyzed a protected ZIP file and used **John the Ripper** to perform a dictionary attack against its hash. This challenge reinforced the importance of strong, complex passwords and showed how easily weak encryption keys can be brute-forced.
+
+![Day 9 Screenshot](/blog/advent-of-cyber/day-9.png)
+*(Day 9 Challenge: A Cracking Christmas)*
+
+</DaySection>
+
+<DaySection day={10}>
+
+## 10) SOC Alert Triaging - Tinsel Triage
+
+**Topic:** Blue Team Operations and Log Analysis.
+
+Day 10 put us in the shoes of a SOC Analyst. We used **Microsoft Sentinel** to investigate security alerts, filter out false positives, and correlate events to identify a true compromise. It was a great hands-on experience with a cloud-native SIEM and the decision-making process involved in incident response.
+
+![Day 10 Screenshot](/blog/advent-of-cyber/day-10.png)
+*(Day 10 Challenge: Tinsel Triage)*
+
+</DaySection>
+
+<DaySection day={11}>
+
+## 11) XSS - Merry XSSMas
+
+**Topic:** Cross-Site Scripting (XSS).
+
+Day 11 focused on web application security, specifically **Reflected XSS**. We learned how to inject malicious JavaScript into a vulnerable website to execute code in the victim's browser. The challenge demonstrated the mechanics of the attack and how to secure inputs to prevent it.
+
+![Day 11 Screenshot](/blog/advent-of-cyber/day-11.png)
+*(Day 11 Challenge: Merry XSSMas)*
+
+</DaySection>
+
+<DaySection day={12}>
+
+## 12) Phishing - Phishmas Greetings
+
+**Topic:** Email Analysis and Phishing Detection.
+
+Day 12 returned to the most common attack vector: Phishing. We analyzed suspicious emails to identify indicators of compromise (IOCs) like spoofed headers, malicious attachments, and deceptive links. It was a solid refresher on distinguishing legitimate communications from social engineering attempts.
+
+![Day 12 Screenshot](/blog/advent-of-cyber/day-12.png)
+*(Day 12 Challenge: Phishmas Greetings)*
+
+</DaySection>
+
+<DaySection day={13}>
+
+## 13) YARA Rules - YARA mean one!
+
+**Topic:** Malware Detection with YARA.
+
+On Day 13, we learned to write **YARA rules** to detect malware based on patterns rather than just hash matching. We created custom rules to identify malicious files by searching for specific strings and byte sequences, a powerful technique for hunting threats that change their signature.
+
+![Day 13 Screenshot](/blog/advent-of-cyber/day-13.png)
+*(Day 13 Challenge: YARA mean one!)*
+
+</DaySection>
+
+<DaySection day={14}>
+
+## 14) Containers - DoorDasher's Demise
+
+**Topic:** Docker and Container Security.
+
+Day 14 introduced us to the world of containers. We explored the structure of a **Docker** image, investigated its layers to find hidden secrets, and learned about common misconfigurations that can lead to container escape or privilege escalation. It was an essential lesson on securing modern microservices architectures.
+
+![Day 14 Screenshot](/blog/advent-of-cyber/day-14.png)
+*(Day 14 Challenge: DoorDasher's Demise)*
+
+</DaySection>
+
+<DaySection day={15}>
+
+## 15) Web Attack Forensics - Drone Alone
+
+**Topic:** Analyzing Web Server Logs with Splunk.
+
+Day 15 focused on **Web Attack Forensics**. We used **Splunk** to analyze web server logs, identifying traces of a command injection attack. By correlating IP addresses, user agents, and suspicious payloads, we were able to reconstruct the attacker's actions and understand the impact of the breach.
+
+![Day 15 Screenshot](/blog/advent-of-cyber/day-15.png)
+*(Day 15 Challenge: Drone Alone)*
+
+</DaySection>
+
+<DaySection day={16}>
+
+## 16) Forensics - Registry Furensics
+
+**Topic:** Windows Registry Forensics.
+
+Day 16 dove into the **Windows Registry**, a goldmine for forensic investigators. We learned how to use tools like **Registry Explorer** to uncover evidence of malicious persistence, tracking software installation dates, and identifying recently executed programs to piece together the timeline of an infection.
+
+![Day 16 Screenshot](/blog/advent-of-cyber/day-16.png)
+*(Day 16 Challenge: Registry Furensics)*
+
+</DaySection>
+
+<DaySection day={17}>
+
+## 17) CyberChef - Hoperation Save McSkidy
+
+**Topic:** Decoding and Reversing with CyberChef.
+
+Day 17 introduced us to **CyberChef**, the "Cyber Swiss Army Knife." We practiced decoding various encoding schemes (Base64, Hex, ROT13) and reversing obfuscated data to reveal hidden flags. It was a great exercise in data manipulation and understanding how attackers hide their tracks.
+
+![Day 17 Screenshot](/blog/advent-of-cyber/day-17.png)
+*(Day 17 Challenge: Hoperation Save McSkidy)*
+
+</DaySection>
+
+<DaySection day={18}>
+
+## 18) Obfuscation - The Egg Shell File
+
+**Topic:** Obfuscation and Deobfuscation.
+
+Day 18 challenged us to unravel the secrets hidden within a suspicious PowerShell script found in a phishing email. We explored the concepts of **Obfuscation**, distinguishing it from encryption and encoding. Using **CyberChef**, we deobfuscated the script to reveal its true intent, learning how attackers hide their malicious code to bypass security filters.
+
+![Day 18 Screenshot](/blog/advent-of-cyber/day-18.png)
+*(Day 18 Challenge: The Egg Shell File)*
+
+</DaySection>
+
+<DaySection day={19}>
+
+## 19) ICS/Modbus - Claus for Concern
+
+**Topic:** Industrial Control Systems (ICS) and Modbus.
+
+Day 19 took a turn into the physical world with **Industrial Control Systems (ICS)**. We investigated a compromised drone delivery system where gifts were being swapped for eggs! The challenge involved analyzing the **Modbus** protocol, understanding how **PLCs** (Programmable Logic Controllers) and **SCADA** systems communicate, and identifying the malicious commands that disrupted the operation.
+
+![Day 19 Screenshot](/blog/advent-of-cyber/day-19.png)
+*(Day 19 Challenge: Claus for Concern)*
+
+</DaySection>
+
+<DaySection day={20}>
+
+## 20) Race Conditions - Toy to The World
+
+**Topic:** Race Conditions in Web Applications.
+
+On Day 20, we explored a timing-based vulnerability known as a **Race Condition**. We attempted to buy a limited-edition toy from an online store and discovered that by sending simultaneous requests, we could manipulate the stock count and purchase more items than allowed. It was a practical demonstration of concurrency issues and how to prevent them using atomic transactions.
+
+![Day 20 Screenshot](/blog/advent-of-cyber/day-20.png)
+*(Day 20 Challenge: Toy to The World)*
+
+</DaySection>
+
+<DaySection day={21}>
+
+## 21) Malware Analysis - Malhare.exe
+
+**Topic:** Reverse Engineering and HTA Analysis.
+
+Day 21 brought us back to **Malware Analysis**, this time focusing on a malicious HTA (HTML Application) file disguised as a "Developer Survey". We analyzed the `Malhare.exe` / HTA payload, decoding obfuscated strings (Base64, ROT13) to understand how it exfiltrated system information like the computer name and username to an external server.
+
+![Day 21 Screenshot](/blog/advent-of-cyber/day-21.png)
+*(Day 21 Challenge: Malhare.exe)*
+
+</DaySection>
+
+<DaySection day={22}>
+
+## 22) C2 Detection - Command & Carol
+
+**Topic:** Command and Control (C2) Detection with RITA.
+
+Day 22 focused on **Threat Hunting** and detecting **Command and Control (C2)** beacons. We analyzed network traffic (PCAP) converted into **Zeek** logs. Using **RITA** (Real Intelligence Threat Analytics), we identified patterns of beaconing activity, helping us uncover a compromised host communicating with an external attacker server.
+
+![Day 22 Screenshot](/blog/advent-of-cyber/day-22.png)
+*(Day 22 Challenge: Command & Carol)*
+
+</DaySection>
+
+
+<DaySection day={23}>
+
+## 23) AWS Security - S3cret Santa
+
+**Topic:** Cloud Security and AWS Enumeration.
+
+Day 23 took us to the cloud! We explored **AWS** (Amazon Web Services) security, specifically focusing on **S3 buckets** and **IAM** (Identity and Access Management). We learned how to use the AWS CLI to enumerate permissions, assume roles to escalate privileges, and access sensitive data stored in misconfigured storage buckets. It was a crucial lesson on the shared responsibility model and the importance of properly securing cloud resources.
+
+![Day 23 Screenshot](/blog/advent-of-cyber/day-23.png)
+*(Day 23 Challenge: S3cret Santa)*
+
+</DaySection>
+
+<DaySection day={24}>
+
+## 24) Exploitation with cURL - Hoperation Eggsploit
+
+**Topic:** Protocol Manipulation and Exploitation.
+
+The final challenge, Day 24, was a grand finale involving **cURL** and protocol manipulation. We used cURL to interact with a communication system, manipulating MQTT messages to control a factory's machinery. It demonstrated how versatile command-line tools can be used for exploitation and the importance of validating all inputs, even in internal communication protocols.
+
+![Day 24 Screenshot](/blog/advent-of-cyber/day-24.png)
+*(Day 24 Challenge: Hoperation Eggsploit)*
+
+</DaySection>
+
+---
+
+<TryHackMeBadge />
+
+And that’s a wrap! Completing all 24 days of the **Advent of Cyber 2025** was an intense but incredibly rewarding journey. It pushed me to explore everything from foundational Linux privilege escalation to advanced cloud security and malware analysis. The skills I picked up here are already proving invaluable in my daily work, and I'm definitely coming back for the **Advent of Cyber 2026** challenge. Happy Hacking!
+
+<AdventNav />
+
+
