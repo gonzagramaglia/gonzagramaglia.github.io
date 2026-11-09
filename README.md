@@ -75,8 +75,6 @@ gonzagramaglia.github.io/
 └── .agents/              # Agent skills and project rules
 ```
 
-![Nerdearla](public/nerdamateur.png)
-
 ---
 
 ## 📖 Documentation

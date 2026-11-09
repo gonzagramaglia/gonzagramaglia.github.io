@@ -171,7 +171,7 @@ export function HomeContent() {
                         <span dangerouslySetInnerHTML={{ __html: (t.about as any).bio }} />
                         <br />
                         <br />
-                        <strong>{t.about.languagesLabel}:</strong> {t.about.spanishNative}, {t.about.english} (<strong><a
+                        <strong>{t.about.languagesLabel}:</strong> {t.about.spanishNative} & {t.about.english} (<strong><a
                             href="https://cert.efset.org/en/VNFN4x"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -336,7 +336,7 @@ export function HomeContent() {
                                         )}
                                     </div>
                                     <p className="text-zinc-600 dark:text-zinc-400">
-                                        {edu.start} - {edu.end}
+                                        {edu.start === edu.end ? edu.start : `${edu.start} - ${edu.end}`}
                                     </p>
                                 </div>
                             </div>

@@ -43,13 +43,13 @@ export type SocialLink = {
 
 export const PROJECTS_EN: Project[] = [
   {
-    name: 'Fitty',
+    name: 'Club de Experiencias',
     description:
-      'AI-powered cat health tracker estimating Body Condition Score (BCS) from photos. Features voice context analysis, historical trend charts, and personalized recommendations. Built for #HACKTHEKITTY 2026 🐾 Tech Stack: React Native, Supabase, Temporal.io, Claude 5, Whisper & Aikido.',
-    link: 'https://fitty-demo.vercel.app',
-    image: '/projects/fitty.png',
-    github: 'https://github.com/gonzagramaglia/fitty',
-    id: 'project_fitty',
+      'A modern web platform for curated outdoor experiences, expedition reservations, and verified provider management. Features receipt payment verification and dedicated portals for clients, providers, and administrators 🧭 Tech Stack: Angular, TypeScript, Supabase, and Tailwind.',
+    link: 'https://experiencias.club',
+    image: '/projects/experiencias-club.webp',
+    github: 'https://github.com/gonzagramaglia/experiencias',
+    id: 'project_experiencias',
   },
   {
     name: 'Truco Mundial',
@@ -79,13 +79,13 @@ export const PROJECTS_EN: Project[] = [
     id: 'project_ciberportero',
   },
   {
-    name: 'Vélez Analytics',
+    name: 'Fitty',
     description:
-      'An analytical dashboard dedicated to tracking the trajectory, match results, and player statistics of Club Atlético Vélez Sarsfield (better known as \'El Fortín\') 🏟️ Tech Stack: Go, Vite, Astro, and Supabase.',
-    link: 'https://github.com/gonzagramaglia/velez',
-    image: '/projects/velez.png',
-    github: 'https://github.com/gonzagramaglia/velez',
-    id: 'project_velez',
+      'AI-powered cat health tracker estimating Body Condition Score (BCS) from photos. Features voice context analysis and personalized recommendations 🐾 Tech Stack: React Native, Supabase, Temporal.io, Claude 5, Whisper & Aikido.',
+    link: 'https://fitty-demo.vercel.app',
+    image: '/projects/fitty.png',
+    github: 'https://github.com/gonzagramaglia/fitty',
+    id: 'project_fitty',
   },
   {
     name: 'Healthy Snacks',
@@ -109,13 +109,13 @@ export const PROJECTS_EN: Project[] = [
 
 export const PROJECTS_ES: Project[] = [
   {
-    name: 'Fitty',
+    name: 'Club de Experiencias',
     description:
-      'Rastreador de salud felina impulsado por IA que estima el Índice de Condición Corporal (BCS) a partir de fotos. Cuenta con análisis por voz, gráficos históricos y recomendaciones personalizadas. Creado para #HACKTHEKITTY 2026 🐾 Construido con React Native, Supabase, Temporal.io, Claude 5 y Whisper.',
-    link: 'https://fitty-demo.vercel.app',
-    image: '/projects/fitty.png',
-    github: 'https://github.com/gonzagramaglia/fitty',
-    id: 'project_fitty',
+      'Plataforma web para el descubrimiento de experiencias al aire libre, reservas de expediciones y gestión integral de prestadores verificados. Incluye validación de comprobantes y portales dedicados para clientes, prestadores y admins 🧭 Construido con Angular, TypeScript, Supabase y Tailwind.',
+    link: 'https://experiencias.club',
+    image: '/projects/experiencias-club.webp',
+    github: 'https://github.com/gonzagramaglia/experiencias',
+    id: 'project_experiencias',
   },
   {
     name: 'Truco Mundial',
@@ -145,13 +145,13 @@ export const PROJECTS_ES: Project[] = [
     id: 'project_ciberportero',
   },
   {
-    name: 'Vélez Analytics',
+    name: 'Fitty',
     description:
-      'Dashboard analítico dedicado a seguir la trayectoria, resultados de partidos y estadísticas de los jugadores del Club Atlético Vélez Sarsfield (más conocido como \'El Fortín\'). Incluye datos históricos y filtros avanzados 🏟️ Construido con Go, Vite, Astro y Supabase.',
-    link: 'https://github.com/gonzagramaglia/velez',
-    image: '/projects/velez.png',
-    github: 'https://github.com/gonzagramaglia/velez',
-    id: 'project_velez',
+      'Rastreador de salud felina impulsado por IA que estima el Índice de Condición Corporal (BCS) a partir de fotos, con análisis por voz y recomendaciones personalizadas 🐾 Construido con React Native, Supabase, Temporal.io, Claude 5 y Whisper.',
+    link: 'https://fitty-demo.vercel.app',
+    image: '/projects/fitty.png',
+    github: 'https://github.com/gonzagramaglia/fitty',
+    id: 'project_fitty',
   },
   {
     name: 'Snacks Saludables',
@@ -229,7 +229,7 @@ export const EDUCATION_EN: WorkExperience[] = [
     company: 'Universidad de la Defensa Nacional',
     title: 'Cyberdefense',
     start: '2026',
-    end: '2029',
+    end: '2026',
     link: 'https://undef.edu.ar/fadena/carreras-de-grado/licciberdefensa/',
     id: 'edu1',
     description:
@@ -281,7 +281,7 @@ export const EDUCATION_ES: WorkExperience[] = [
     company: 'Universidad de la Defensa Nacional',
     title: 'Ciberdefensa',
     start: '2026',
-    end: '2029',
+    end: '2026',
     link: 'https://undef.edu.ar/fadena/carreras-de-grado/licciberdefensa/',
     id: 'edu1',
     description:

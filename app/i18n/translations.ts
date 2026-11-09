@@ -5,7 +5,7 @@ export const translations = {
     en: {
         role: 'Full Stack Developer | Systems Reliability & Security',
         about: {
-            bio: '<strong>Full Stack Developer</strong> dedicated to building <strong>scalable web applications</strong> and engaging user experiences. Currently pursuing a degree in <strong>Cyberdefense</strong>, I bring a unique <strong>security-first mindset</strong> to modern web development. From designing intuitive frontends to architecting resilient backends, I deliver <strong>fast, secure, and production-ready</strong> products. In my free time, my hobby is solving labs on <a href="https://tryhackme.com/p/ciberportero" target="_blank" rel="noopener noreferrer" class="underline hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">TryHackMe</a>.',
+            bio: '<strong>Full Stack Developer</strong> dedicated to building <strong>scalable web applications</strong> and engaging user experiences. With a background in <strong>Cyberdefense</strong>, I bring a unique <strong>security-first mindset</strong> to modern web development. Focused on creating, improving, and securely integrating web solutions, I deliver <strong>fast, secure, and production-ready</strong> products.',
             languagesLabel: 'Languages',
             spanishNative: 'Spanish (Native)',
             english: 'English',
@@ -24,7 +24,7 @@ export const translations = {
     es: {
         role: 'Full Stack Developer | Infraestructura & Seguridad',
         about: {
-            bio: '<strong>Full Stack Developer</strong> dedicado a construir <strong>aplicaciones web escalables</strong> y experiencias de usuario dinámicas. Actualmente cursando la licenciatura en <strong>Ciberdefensa</strong>, aporto un enfoque de <strong>seguridad desde el diseño</strong> al desarrollo web moderno. Desde la creación de interfaces intuitivas hasta la arquitectura de backends resilientes, transformo ideas en productos <strong>rápidos, seguros y listos para producción</strong>. En mi tiempo libre, mi hobby es resolver laboratorios en <a href="https://tryhackme.com/p/ciberportero" target="_blank" rel="noopener noreferrer" class="underline hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors">TryHackMe</a>.',
+            bio: '<strong>Full Stack Developer</strong> dedicado a construir <strong>aplicaciones web escalables</strong> y experiencias de usuario dinámicas. Con formación en <strong>Ciberdefensa</strong>, aporto un enfoque de <strong>seguridad desde el diseño</strong> al desarrollo web moderno. Enfocado en crear, mejorar e integrar tecnologías web de forma segura, transformo ideas en productos <strong>rápidos, seguros y listos para producción</strong>.',
             languagesLabel: 'Idiomas',
             spanishNative: 'Español (Nativo)',
             english: 'Inglés',
